@@ -3,6 +3,7 @@
 #include "ObjMgr.h"
 #include "SceneMgr.h"
 #include "KeyMgr.h"
+#include "CollisionMgr.h"
 CMainGame::CMainGame()
 {
 }
@@ -45,7 +46,6 @@ void CMainGame::Release()
 	CObjMgr::Destroy_Instance();
 	CKeyMgr::Destroy_Instance();
 	CSceneMgr::Destroy_Instance();
-
 }
 CMainGame * CMainGame::Create()
 {

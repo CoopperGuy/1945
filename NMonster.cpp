@@ -1,27 +1,21 @@
 #include "stdafx.h"
-#include "Player.h"
-#include "KeyMgr.h"
-#include "ObjMgr.h"
-#include "Bullet.h"
-CPlayer::CPlayer() 
+#include "NMonster.h"
 
+
+CNMonster::CNMonster()
 {
-
-
 }
 
 
-CPlayer::~CPlayer()
+CNMonster::~CNMonster()
 {
-	Release();
 }
 
-HRESULT CPlayer::Initialize()
+HRESULT CNMonster::Initialize()
 {
-
 	m_tInfo.vPos = { 100.f, 0.f, 0.f };
 	m_tInfo.vDir = D3DXVECTOR3(1.f, 1.f, 0.f);
-	m_tInfo.vSize = D3DXVECTOR3(100.f, 100.f, 0.f);
+	m_tInfo.vSize = D3DXVECTOR3(30.f, 30.f, 0.f);
 
 	m_vP[0] = { -m_tInfo.vSize.x * 0.5f, -m_tInfo.vSize.y * 0.5f, 0.f };
 	m_vP[1] = { m_tInfo.vSize.x * 0.5f, -m_tInfo.vSize.y * 0.5f, 0.f };
@@ -30,7 +24,7 @@ HRESULT CPlayer::Initialize()
 	return S_OK;
 }
 
-int CPlayer::Update()
+int CNMonster::Update()
 {
 	if (m_bDead)
 		return OBJ_DEAD;
@@ -44,36 +38,23 @@ int CPlayer::Update()
 	//D3DXVec3TransformCoord(); // x,y,z w = 1
 	//D3DXVec3TransformNormal(); // x,y,z w = 0
 
-	//행렬을 이용한 객체 상태 표현. ! ////////////////////////////////////////////////////////////////////////
+
 	for (int i = 0; i < 4; ++i)
 	{
 		D3DXVec3TransformCoord(&m_vQ[i], &m_vP[i], &matWorld);
 	}
 
 
-	if (CKeyMgr::Get_Instance()->Key_Pressing(VK_LEFT)) {
-		m_tInfo.vPos.x -= m_fSpeed;
-	}
-	if (CKeyMgr::Get_Instance()->Key_Pressing(VK_RIGHT)) {
-		m_tInfo.vPos.x += m_fSpeed;
-	}
-	if (CKeyMgr::Get_Instance()->Key_Pressing(VK_UP)) {
-		m_tInfo.vPos.y -= m_fSpeed;
-	}
-	if (CKeyMgr::Get_Instance()->Key_Pressing(VK_DOWN)) {
-		m_tInfo.vPos.y += m_fSpeed;
-	}
-	if (CKeyMgr::Get_Instance()->Key_Pressing(VK_SPACE)) {
-		CObjMgr::Get_Instance()->Add_Object(CAbstractFactory<CBullet>::Create(m_tInfo.vPos), OBJID::PLAYERBULLET);
-	}
+
+
 	return OBJ_NOEVENT;
 }
 
-void CPlayer::Late_Update()
+void CNMonster::Late_Update()
 {
 }
 
-void CPlayer::Render(HDC _DC)
+void CNMonster::Render(HDC _DC)
 {
 	MoveToEx(_DC, m_vQ[0].x, m_vQ[0].y, nullptr);
 
@@ -83,17 +64,6 @@ void CPlayer::Render(HDC _DC)
 
 }
 
-void CPlayer::Release()
+void CNMonster::Release()
 {
-}
-
-CObj * CPlayer::Create()
-{
-	CPlayer* pInstance = new CPlayer;
-	if (FAILED(pInstance->Initialize()))
-	{
-		Safe_Delete(pInstance);
-		return nullptr;
-	}
-	return pInstance;
 }

@@ -14,8 +14,15 @@ public:
 	virtual void Late_Update() = 0;
 	virtual void Render(HDC _DC) = 0;
 	virtual void Release() = 0;
+public:
+	void Set_Pos(D3DXVECTOR3 _vPos) { m_tInfo.vPos = _vPos; }
+	void Set_Size(D3DXVECTOR3 _vSize) { m_tInfo.vSize = _vSize; }
+	void Set_Dir(D3DXVECTOR3 _vDir) { m_tInfo.vDir = _vDir; }
 
-
+public:
+	D3DXVECTOR3 Get_Pos() { return m_tInfo.vPos; }
+	D3DXVECTOR3 Get_Size() { return m_tInfo.vSize; }
+	D3DXVECTOR3 Get_Dir() { return m_tInfo.vDir; }
 protected:
 	D3DXVECTOR3 m_vQ[4];
 	D3DXVECTOR3 m_vP[4];

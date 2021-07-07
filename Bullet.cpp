@@ -13,9 +13,8 @@ CBullet::~CBullet()
 
 HRESULT CBullet::Initialize()
 {
-	m_tInfo.vPos = { 100.f, 0.f, 0.f };
-	m_tInfo.vDir = D3DXVECTOR3(1.f, 1.f, 0.f);
-	m_tInfo.vSize = D3DXVECTOR3(100.f, 100.f, 0.f);
+	m_tInfo.vDir = D3DXVECTOR3(0.f, 10.f, 0.f);
+	m_tInfo.vSize = D3DXVECTOR3(30.f, 30.f, 0.f);
 
 	m_vP[0] = { -m_tInfo.vSize.x * 0.5f, -m_tInfo.vSize.y * 0.5f, 0.f };
 	m_vP[1] = { m_tInfo.vSize.x * 0.5f, -m_tInfo.vSize.y * 0.5f, 0.f };
@@ -44,6 +43,7 @@ int CBullet::Update()
 		D3DXVec3TransformCoord(&m_vQ[i], &m_vP[i], &matWorld);
 	}
 
+	m_tInfo.vPos -= m_tInfo.vDir;
 
 	
 	return OBJ_NOEVENT;
@@ -57,9 +57,11 @@ void CBullet::Render(HDC _DC)
 {
 	RECT rc = {};
 	rc.left = m_vQ[0].x;
-	rc.right = m_vQ[0].y;
-	rc.right = m_vQ[3].x;
-	rc.bottom = m_vQ[3].y;
+	rc.top = m_vQ[0].y;
+	rc.right = m_vQ[2].x;
+	rc.bottom = m_vQ[2].y;
+
+	Rectangle(_DC, rc.left, rc.top, rc.right, rc.bottom);
 }
 
 void CBullet::Release()

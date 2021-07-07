@@ -17,6 +17,16 @@ public:
 		}
 		return pObj;
 	}
+	static CObj* Create(D3DXVECTOR3 _vPos) {
+		CObj* pObj = new T;
+		if (FAILED(pObj->Initialize()))
+		{
+			Safe_Delete(pObj);
+			return nullptr;
+		}
+		pObj->Set_Pos(_vPos);
+		return pObj;
+	}
 
 };
 
