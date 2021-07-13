@@ -9,12 +9,17 @@ CBullet::CBullet()
 
 CBullet::~CBullet()
 {
+	Release();
 }
 
 HRESULT CBullet::Initialize()
 {
 	m_tInfo.vDir = D3DXVECTOR3(0.f, 10.f, 0.f);
 	m_tInfo.vSize = D3DXVECTOR3(30.f, 30.f, 0.f);
+	m_tObjInfo.ihp = 1;
+	m_tObjInfo.iatk = 1;
+	m_tObjInfo.fspd = 10.f;
+	m_tObjInfo.fagl = 0.f;
 
 	m_vP[0] = { -m_tInfo.vSize.x * 0.5f, -m_tInfo.vSize.y * 0.5f, 0.f };
 	m_vP[1] = { m_tInfo.vSize.x * 0.5f, -m_tInfo.vSize.y * 0.5f, 0.f };
@@ -51,6 +56,9 @@ int CBullet::Update()
 
 void CBullet::Late_Update()
 {
+	if (m_tInfo.vPos.x < 0.f || m_tInfo.vPos.x > WINCX ||
+		m_tInfo.vPos.y <0.f || m_tInfo.vPos.y > WINCY)
+		m_bDead = true;
 }
 
 void CBullet::Render(HDC _DC)
@@ -61,7 +69,7 @@ void CBullet::Render(HDC _DC)
 	rc.right = m_vQ[2].x;
 	rc.bottom = m_vQ[2].y;
 
-	Rectangle(_DC, rc.left, rc.top, rc.right, rc.bottom);
+	Ellipse(_DC, rc.left, rc.top, rc.right, rc.bottom);
 }
 
 void CBullet::Release()

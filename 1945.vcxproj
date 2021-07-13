@@ -149,40 +149,84 @@
   <ItemGroup>
     <ClInclude Include="1945.h" />
     <ClInclude Include="AbstractFactory.h" />
+    <ClInclude Include="BGuideBullet.h" />
+    <ClInclude Include="BigMon.h" />
+    <ClInclude Include="BMonSpawn.h" />
+    <ClInclude Include="Bomb.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="BossBullet.h" />
+    <ClInclude Include="BossSpawn.h" />
     <ClInclude Include="Bullet.h" />
+    <ClInclude Include="CollisionMgr.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="enum.h" />
+    <ClInclude Include="ExplodeBullet.h" />
+    <ClInclude Include="Explosion.h" />
     <ClInclude Include="extern.h" />
+    <ClInclude Include="FinalBoss.h" />
     <ClInclude Include="Function.h" />
     <ClInclude Include="Include.h" />
+    <ClInclude Include="Item.h" />
     <ClInclude Include="KeyMgr.h" />
     <ClInclude Include="MainGame.h" />
+    <ClInclude Include="MonBullet.h" />
+    <ClInclude Include="MonExp.h" />
     <ClInclude Include="Monster.h" />
+    <ClInclude Include="MSfx.h" />
     <ClInclude Include="NMonster.h" />
+    <ClInclude Include="NSpawn.h" />
+    <ClInclude Include="NSpawnTwo.h" />
     <ClInclude Include="Obj.h" />
     <ClInclude Include="ObjMgr.h" />
+    <ClInclude Include="PatternMgr.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneMgr.h" />
+    <ClInclude Include="Sfx.h" />
+    <ClInclude Include="SoloMon.h" />
+    <ClInclude Include="SoloSpawn.h" />
     <ClInclude Include="Stage.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StrBullet.h" />
     <ClInclude Include="Struct.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="VMonster.h" />
+    <ClInclude Include="VSpawn.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1945.cpp" />
+    <ClCompile Include="BGuideBullet.cpp" />
+    <ClCompile Include="BigMon.cpp" />
+    <ClCompile Include="BMonSpawn.cpp" />
+    <ClCompile Include="Bomb.cpp" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="BossBullet.cpp" />
+    <ClCompile Include="BossSpawn.cpp" />
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="CollisionMgr.cpp" />
+    <ClCompile Include="ExplodeBullet.cpp" />
+    <ClCompile Include="Explosion.cpp" />
+    <ClCompile Include="FinalBoss.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="KeyMgr.cpp" />
     <ClCompile Include="MainGame.cpp" />
+    <ClCompile Include="MonBullet.cpp" />
+    <ClCompile Include="MonExp.cpp" />
     <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="MSfx.cpp" />
     <ClCompile Include="NMonster.cpp" />
+    <ClCompile Include="NSpawn.cpp" />
+    <ClCompile Include="NSpawnTwo.cpp" />
     <ClCompile Include="Obj.cpp" />
     <ClCompile Include="ObjMgr.cpp" />
+    <ClCompile Include="PatternMgr.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneMgr.cpp" />
+    <ClCompile Include="Sfx.cpp" />
+    <ClCompile Include="SoloMon.cpp" />
+    <ClCompile Include="SoloSpawn.cpp" />
     <ClCompile Include="Stage.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -190,6 +234,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="StrBullet.cpp" />
+    <ClCompile Include="VMonster.cpp" />
+    <ClCompile Include="VSpawn.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="1945.rc" />

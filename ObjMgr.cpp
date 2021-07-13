@@ -36,6 +36,11 @@ void CObjMgr::Update()
 
 void CObjMgr::Late_Update()
 {
+
+	for (auto & diter : m_listObj[OBJID::PLAYER])
+		for (auto& siter : m_listObj[OBJID::MONSTERBULLET])
+			CCollisionMgr::Collision_Check_Matrix(diter, siter);
+
 	for (int i = 0; i < OBJID::END; ++i)
 	{
 		for (auto& pObj : m_listObj[i])
@@ -46,12 +51,15 @@ void CObjMgr::Late_Update()
 				break;
 		}
 	}
-	for(auto & diter : m_listObj[OBJID::MONSTER])
+	for (auto & diter : m_listObj[OBJID::MONSTER])
 		for (auto& siter : m_listObj[OBJID::PLAYERBULLET])
 			CCollisionMgr::Collision_Check_Matrix(diter, siter);
-	for (auto & diter : m_listObj[OBJID::PLAYER])
+	for (auto & diter : m_listObj[OBJID::PLAYERBOMB])
 		for (auto& siter : m_listObj[OBJID::MONSTERBULLET])
 			CCollisionMgr::Collision_Check_Matrix(diter, siter);
+	for (auto & diter : m_listObj[OBJID::PLAYER])
+		for (auto& siter : m_listObj[OBJID::ITEM])
+			CCollisionMgr::Collision_Check_Matrix_Item(diter, siter);
 
 }
 
@@ -74,3 +82,4 @@ void CObjMgr::Release()
 		m_listObj[i].clear();
 	}
 }
+

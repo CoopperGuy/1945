@@ -5,10 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="헤더 파일">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="리소스 파일">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -49,14 +45,81 @@
     <Filter Include="소스 파일\01.Obj\01.Player">
       <UniqueIdentifier>{d4766204-0ccd-453f-838d-c9bc4193bc1b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\01.Obj\02.Bullet">
+    <Filter Include="소스 파일\01.Obj\01.Player\01.Bullet">
       <UniqueIdentifier>{511305f5-23a4-479a-a780-a9cfdadcda1e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\01.Obj\03.Monster">
+    <Filter Include="소스 파일\01.Obj\02.Monster">
       <UniqueIdentifier>{622dd9cc-5d40-4834-88d0-02ced4dd6d84}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\01.Obj\03.Monster\01.NormalMonster">
+    <Filter Include="소스 파일\01.Obj\02.Monster\01.NormalMonster">
       <UniqueIdentifier>{f554ffe9-8a89-44fe-aee1-321be288d09d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\01.NormalMonster\01.MonBullet">
+      <UniqueIdentifier>{026cc3e8-d8a3-44c0-8a88-9dc2964106e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\01.NormalMonster\02.Spawn">
+      <UniqueIdentifier>{4f11299d-4a0b-4c8a-8c55-ae1fcf20be4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\02.BigMon">
+      <UniqueIdentifier>{e8864d9c-77bf-408b-97fc-0865fd4b7c1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\03.Item">
+      <UniqueIdentifier>{7d5458b7-19c6-4d9f-89b8-89871f3d0f50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\03.Boss">
+      <UniqueIdentifier>{62c531f7-c9a2-42c2-ad54-15ad1853794c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\01.Player\02.Bomb">
+      <UniqueIdentifier>{b8470030-d1cf-45eb-a544-767407ea8e82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\03.Boss\01.BossBullet">
+      <UniqueIdentifier>{4b7b1288-6d19-4ef5-9ae5-840cde6b987b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\03.Boss\02.GuidBullet">
+      <UniqueIdentifier>{24730e91-cf38-4ab5-ab9c-9a42ae679642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\99.Mgr\05.PatternMgr">
+      <UniqueIdentifier>{022b2abf-bfc1-490c-81d7-e69a36228437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\01.NormalMonster\03.SpawnTwo">
+      <UniqueIdentifier>{5dde2c8b-74f1-42dc-92f9-b40b14bc1e7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\02.BigMon\01.BMonSpawn">
+      <UniqueIdentifier>{8af99b39-ca57-4ceb-8435-67bbcae19fac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\04.SoloMon">
+      <UniqueIdentifier>{631841d7-7a5c-4199-90d5-c2bc84f20aa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\04.SoloMon\01.StrBullet">
+      <UniqueIdentifier>{f0efcaa4-30ba-4774-8444-7e1bc7143a55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\04.SoloMon\02.SoloSpawn">
+      <UniqueIdentifier>{54f97a2f-7bc6-4068-856d-711515b7b3eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\05.VMonster">
+      <UniqueIdentifier>{31a80f73-04a7-4413-aa72-e9838a27b378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\05.VMonster\01.VSpawn">
+      <UniqueIdentifier>{a370cea9-2d75-4cde-afe4-ffa363518697}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\03.Boss\03.BossSpawn">
+      <UniqueIdentifier>{d5af2ded-06b8-4ed1-9b73-90b2e2c92a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\04.Sfx">
+      <UniqueIdentifier>{b4519362-4506-4a2c-86b2-03946519d085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\04.Sfx\01.Explosion">
+      <UniqueIdentifier>{69d0014b-2a1e-49d0-9eee-8c6e2efb3091}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\04.Sfx\02.MonExp">
+      <UniqueIdentifier>{7542e707-68a6-4fd2-92bd-677802a242f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\01.Obj\02.Monster\06.FBoss">
+      <UniqueIdentifier>{d8e19ec7-3579-4a5c-88bc-8b7cf891dcdc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -64,16 +127,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>소스 파일\헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>소스 파일\헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="1945.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>소스 파일\헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Include.h">
       <Filter>00.Header</Filter>
@@ -121,25 +181,91 @@
       <Filter>소스 파일\99.Mgr\02.KeyMgr</Filter>
     </ClInclude>
     <ClInclude Include="Bullet.h">
-      <Filter>소스 파일\01.Obj\02.Bullet</Filter>
+      <Filter>소스 파일\01.Obj\01.Player\01.Bullet</Filter>
     </ClInclude>
     <ClInclude Include="Monster.h">
-      <Filter>소스 파일\01.Obj\03.Monster</Filter>
+      <Filter>소스 파일\01.Obj\02.Monster</Filter>
     </ClInclude>
     <ClInclude Include="NMonster.h">
-      <Filter>소스 파일\01.Obj\03.Monster\01.NormalMonster</Filter>
+      <Filter>소스 파일\01.Obj\02.Monster\01.NormalMonster</Filter>
     </ClInclude>
     <ClInclude Include="CollisionMgr.h">
       <Filter>소스 파일\99.Mgr\01.CollisionMgr</Filter>
     </ClInclude>
+    <ClInclude Include="MonBullet.h">
+      <Filter>소스 파일\01.Obj\02.Monster\01.NormalMonster\01.MonBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="NSpawn.h">
+      <Filter>소스 파일\01.Obj\02.Monster\01.NormalMonster\02.Spawn</Filter>
+    </ClInclude>
+    <ClInclude Include="BigMon.h">
+      <Filter>소스 파일\01.Obj\02.Monster\02.BigMon</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>소스 파일\01.Obj\03.Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Bomb.h">
+      <Filter>소스 파일\01.Obj\01.Player\02.Bomb</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>소스 파일\01.Obj\02.Monster\03.Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="BossBullet.h">
+      <Filter>소스 파일\01.Obj\02.Monster\03.Boss\01.BossBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="BGuideBullet.h">
+      <Filter>소스 파일\01.Obj\02.Monster\03.Boss\02.GuidBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternMgr.h">
+      <Filter>소스 파일\99.Mgr\05.PatternMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="NSpawnTwo.h">
+      <Filter>소스 파일\01.Obj\02.Monster\01.NormalMonster\03.SpawnTwo</Filter>
+    </ClInclude>
+    <ClInclude Include="BMonSpawn.h">
+      <Filter>소스 파일\01.Obj\02.Monster\02.BigMon\01.BMonSpawn</Filter>
+    </ClInclude>
+    <ClInclude Include="SoloMon.h">
+      <Filter>소스 파일\01.Obj\02.Monster\04.SoloMon</Filter>
+    </ClInclude>
+    <ClInclude Include="StrBullet.h">
+      <Filter>소스 파일\01.Obj\02.Monster\04.SoloMon\01.StrBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="SoloSpawn.h">
+      <Filter>소스 파일\01.Obj\02.Monster\04.SoloMon\02.SoloSpawn</Filter>
+    </ClInclude>
+    <ClInclude Include="VMonster.h">
+      <Filter>소스 파일\01.Obj\02.Monster\05.VMonster</Filter>
+    </ClInclude>
+    <ClInclude Include="VSpawn.h">
+      <Filter>소스 파일\01.Obj\02.Monster\05.VMonster\01.VSpawn</Filter>
+    </ClInclude>
+    <ClInclude Include="BossSpawn.h">
+      <Filter>소스 파일\01.Obj\02.Monster\03.Boss\03.BossSpawn</Filter>
+    </ClInclude>
+    <ClInclude Include="Sfx.h">
+      <Filter>소스 파일\01.Obj\04.Sfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Explosion.h">
+      <Filter>소스 파일\01.Obj\04.Sfx\01.Explosion</Filter>
+    </ClInclude>
+    <ClInclude Include="MonExp.h">
+      <Filter>소스 파일\01.Obj\04.Sfx\02.MonExp</Filter>
+    </ClInclude>
+    <ClInclude Include="1945.h">
+      <Filter>소스 파일\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MSfx.h">
+      <Filter>소스 파일\01.Obj\04.Sfx</Filter>
+    </ClInclude>
+    <ClInclude Include="FinalBoss.h">
+      <Filter>소스 파일\01.Obj\02.Monster\06.FBoss</Filter>
+    </ClInclude>
+    <ClInclude Include="ExplodeBullet.h">
+      <Filter>소스 파일\01.Obj\02.Monster\06.FBoss</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1945.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="MainGame.cpp">
       <Filter>소스 파일\00.MainGame</Filter>
     </ClCompile>
@@ -165,16 +291,91 @@
       <Filter>소스 파일\99.Mgr\02.KeyMgr</Filter>
     </ClCompile>
     <ClCompile Include="Bullet.cpp">
-      <Filter>소스 파일\01.Obj\02.Bullet</Filter>
+      <Filter>소스 파일\01.Obj\01.Player\01.Bullet</Filter>
     </ClCompile>
     <ClCompile Include="Monster.cpp">
-      <Filter>소스 파일\01.Obj\03.Monster</Filter>
+      <Filter>소스 파일\01.Obj\02.Monster</Filter>
     </ClCompile>
     <ClCompile Include="NMonster.cpp">
-      <Filter>소스 파일\01.Obj\03.Monster\01.NormalMonster</Filter>
+      <Filter>소스 파일\01.Obj\02.Monster\01.NormalMonster</Filter>
     </ClCompile>
     <ClCompile Include="CollisionMgr.cpp">
       <Filter>소스 파일\99.Mgr\01.CollisionMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="MonBullet.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\01.NormalMonster\01.MonBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="NSpawn.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\01.NormalMonster\02.Spawn</Filter>
+    </ClCompile>
+    <ClCompile Include="BigMon.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\02.BigMon</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>소스 파일\01.Obj\03.Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Bomb.cpp">
+      <Filter>소스 파일\01.Obj\01.Player\02.Bomb</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\03.Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="BossBullet.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\03.Boss\01.BossBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="BGuideBullet.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\03.Boss\02.GuidBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternMgr.cpp">
+      <Filter>소스 파일\99.Mgr\05.PatternMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="NSpawnTwo.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\01.NormalMonster\03.SpawnTwo</Filter>
+    </ClCompile>
+    <ClCompile Include="BMonSpawn.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\02.BigMon\01.BMonSpawn</Filter>
+    </ClCompile>
+    <ClCompile Include="SoloMon.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\04.SoloMon</Filter>
+    </ClCompile>
+    <ClCompile Include="StrBullet.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\04.SoloMon\01.StrBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="SoloSpawn.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\04.SoloMon\02.SoloSpawn</Filter>
+    </ClCompile>
+    <ClCompile Include="VMonster.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\05.VMonster</Filter>
+    </ClCompile>
+    <ClCompile Include="VSpawn.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\05.VMonster\01.VSpawn</Filter>
+    </ClCompile>
+    <ClCompile Include="BossSpawn.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\03.Boss\03.BossSpawn</Filter>
+    </ClCompile>
+    <ClCompile Include="Sfx.cpp">
+      <Filter>소스 파일\01.Obj\04.Sfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Explosion.cpp">
+      <Filter>소스 파일\01.Obj\04.Sfx\01.Explosion</Filter>
+    </ClCompile>
+    <ClCompile Include="MonExp.cpp">
+      <Filter>소스 파일\01.Obj\04.Sfx\02.MonExp</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일\헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1945.cpp">
+      <Filter>소스 파일\헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MSfx.cpp">
+      <Filter>소스 파일\01.Obj\04.Sfx</Filter>
+    </ClCompile>
+    <ClCompile Include="FinalBoss.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\06.FBoss</Filter>
+    </ClCompile>
+    <ClCompile Include="ExplodeBullet.cpp">
+      <Filter>소스 파일\01.Obj\02.Monster\06.FBoss</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

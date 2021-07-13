@@ -3,7 +3,7 @@
 
 #ifndef __CSTAGE_H__
 #define __CSTAGE_H__
-
+#define EVENT_SIZE 30
 #include "Scene.h"
 class CStage :
 	public CScene
@@ -17,6 +17,7 @@ public:
 	virtual void Late_Update() override;
 	virtual void Render(HDC _DC) override;
 	virtual void Release() override;
+
 };
 
 #endif //__CSTAGE_H__

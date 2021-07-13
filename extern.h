@@ -2,8 +2,8 @@
 #define __EXTERN_H__
 
 extern HWND g_hWnd;
-const int WINCX = 800;
-const int WINCY = 600;
+const int WINCX = 600;
+const int WINCY = 800;
 
 
 

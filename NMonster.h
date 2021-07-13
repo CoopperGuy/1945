@@ -13,6 +13,7 @@ public:
 
 public:
 	virtual HRESULT Initialize() override;
+	virtual void Ready()override;
 	virtual int Update() override;
 	virtual void Late_Update() override;
 	virtual void Render(HDC _DC) override;

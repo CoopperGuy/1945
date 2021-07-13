@@ -20,6 +20,8 @@ public:
 public:
 	CObj* Get_Player() { return m_listObj[OBJID::PLAYER].front(); }
 public:
+	bool Player_Empty() { return m_listObj[OBJID::PLAYER].empty(); }
+public:
 	static CObjMgr* Get_Instance()
 	{
 		if (!m_pInstance)
